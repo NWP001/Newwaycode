@@ -24,7 +24,6 @@ def login(request):
     return render(request,'login.html')
             
 def register(request):
-    global context1
     context1 = {'message1':'Login has been created','class':'success'}
     if request.method=="POST":
         email = request.POST.get("email")
@@ -46,7 +45,8 @@ def register(request):
             profile = Profile(user=user ,mobile=mobile)
             profile.save()
             print("profile created")
+            return render(request,'register.html',context1)
        
         # user=User(email=email ,first_name=name)
         # user.save()
-    return render(request,'register.html',context1)
+    return render(request,'register.html')
