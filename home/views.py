@@ -24,6 +24,7 @@ def login(request):
     return render(request,'login.html')
             
 def register(request):
+    global context1
     context1 = {'message1':'Login has been created','class':'success'}
     if request.method=="POST":
         email = request.POST.get("email")
