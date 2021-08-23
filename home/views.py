@@ -33,6 +33,7 @@ def register(request):
 
         check_user=User.objects.filter(email=email).first()
         check_profile=Profile.objects.filter(mobile=mobile).first()
+        context1 = {'message1':'Login has been created','class':'success'}
     
         if check_user or check_profile:
             context={'message':'User already exists','class':'danger'}
@@ -47,4 +48,4 @@ def register(request):
        
         # user=User(email=email ,first_name=name)
         # user.save()
-    return render(request,'register.html')
+    return render(request,'register.html',context1)
