@@ -24,6 +24,7 @@ def login(request):
     return render(request,'login.html')
             
 def register(request):
+    context1 = {'message1':'Login has been created','class':'success'}
     if request.method=="POST":
         email = request.POST.get("email")
         name = request.POST.get("name")
@@ -33,7 +34,6 @@ def register(request):
 
         check_user=User.objects.filter(email=email).first()
         check_profile=Profile.objects.filter(mobile=mobile).first()
-        context1 = {'message1':'Login has been created','class':'success'}
     
         if check_user or check_profile:
             context={'message':'User already exists','class':'danger'}
