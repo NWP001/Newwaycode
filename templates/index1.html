@@ -51,26 +51,26 @@
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
-          <div class="container">
-          </div>
+            <div class="container">
+            </div>
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-          <div class="container">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-              <!-- <svg  width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
-              <img src="static/final title logo .png" width="50" alt="">
-              <strong class="mx-1"> New way Professionals</strong>
-              
-            </a>
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <!-- <svg  width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+                    <img src="static/final title logo .png" width="50" alt="">
+                    <strong class="mx-1"> New way Professionals</strong>
 
-            <!-- <a href="https://newwayprofessionals.in/demo-book-page/">
+                </a>
+
+                <!-- <a href="https://newwayprofessionals.in/demo-book-page/">
                 <button type="button" class="btn btn-outline-primary">Book-Demo</button></a> -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> -->
-          </div>
+            </div>
         </div>
-      </header>
+    </header>
     <main>
         <section class="py-5 text-center container">
             <div class=" ">
@@ -99,28 +99,54 @@
                             <img src="static/powershell.jpg" class="image-fluid" width="100%" height="228" alt="" />
                             <div class="card-body py-1">
                                 <p class="card-text">
-                               <u> <h4 class="mt-0">PowerShell for Beginners</h4></u> PowerShell is a powerful tool used to automated many
-                                day-to-day tasks that a Windows Admin or a normal Windows End User might encounter.</p>
+                                    <u>
+                                        <h4 class="mt-0">PowerShell for Beginners</h4>
+                                    </u> PowerShell is a powerful tool used to automated many
+                                    day-to-day tasks that a Windows Admin or a normal Windows End User might encounter.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center mb-1">
-                                                    <div class="btn-group mx-8">
-                                                     <a href="{% url 'login' %}">
-                                                    <button  type="button" class="btn btn-outline-primary ">Buy-Now</button> </a>
-                                                    <button id="show-login" type="button" class="btn btn-sm btn-outline-secondary">Content</button>
-                                    </div> 
+                                    <div class="btn-group mx-8">
+                                        <a href="{% url 'login' %}">
+                                            <button type="button" class="btn btn-outline-primary mt-3">Buy-Now</button> </a>
+                                        <!-- <button id="show-login" type="button"
+                                            class="btn btn-sm btn-outline-secondary">Content</button> -->
+                                    </div>
                                     <!-- <a href="{% url 'login' %}">
                                     <div id="show-login" style="text-align: center;" class="btn btn-outline-primary">Buy-Now</div>
                                     </a> -->
                                     <!-- <h6>Duration ~1 hr </h6> -->
-                                    <img src="static/rupee.png" width="30" alt="">
-                                    <h3>200</h3>
+                                   
+                                    <!-- <img src="static/rupee.png" width="30" alt=""> -->
+                                    <h3 class="mt-3">(₹) 200</h3>
+                                
 
                                     <!-- <label class="form-label">Amount:200</label> -->
                                 </div>
-                               
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+    
+                    <center>
+                        <div class="col">
+                        <h2 class="mb-5" > Course Content</h2>
+                        <h5  class="mb-3">Total Duration ~ 1 hr</h5>
+                        <h5 class="mb-2" style="text-align: center;">Video 1:Introduction to powershell.</h5>
+                        <h5 class="mb-2" style="text-align: center;">Video 2:String immutability/indexing.</h5>
+                        <h5 class="mb-2" style="text-align: center;">Video 4:conditional statements.</h5>
+                        <h5 class="mb-2 mr-5" style="text-align: center;">Video 3:Operators.</h5>
+                        
+ 
+                    </center>
+                    </div>
+
+                    
+                   
+
+
+
+
+
+                    <!-- <div class="col">
                         <div class="card shadow-sm">
                             {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
@@ -132,18 +158,22 @@
                             <img src="static/python.jpg" class="image-fluid" width="100%" height="207" alt="" />
                             <div class="card-body">
                                 <p class="card-text">
-                                <u><h4>Python</h4></u> Python is an interpreted, object-oriented, high-level programming
-                                language with dynamic semantics. It is simple, easy to learn syntax, emphasizes
-                                readability
+                                    <u>
+                                        <h4>Python</h4>
+                                    </u> Python is an interpreted, object-oriented, high-level programming
+                                    language with dynamic semantics. It is simple, easy to learn syntax, emphasizes
+                                    readability
 
-                                .</p>
+                                    .
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <!-- <a href="{% url 'login' %}"> -->
-                                        <button id="show-login1" type="button" class="btn btn-outline-primary">Buy-Now</button>
+                                        <a href="{% url 'login' %}"> -->
+                                        <!-- <button id="show-login1" type="button"
+                                            class="btn btn-outline-primary">Buy-Now</button>
                                         </a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
+                                    <!-- </div>
                                 </div>
                             </div>
                         </div>
@@ -160,22 +190,26 @@
                             <img src="static/aws.jpg" class="mt-2" width="100%" height="200" alt="" />
                             <div class="card-body">
                                 <p class="card-text">
-                                <u><h4>AWS</h4></u>AWS is a comprehensive, evolving cloud computing platform provided by Amazon
-                                that includes a mixture of IaaS, PaaS and SaaS offerings.</p>
+                                    <u>
+                                        <h4>AWS</h4>
+                                    </u>AWS is a comprehensive, evolving cloud computing platform provided by Amazon
+                                    that includes a mixture of IaaS, PaaS and SaaS offerings.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <!-- <a href="{% url 'login' %}"> -->
-                                        <button id="show-login2" type="button" class="btn btn-outline-primary">Buy-Now</button>
-                                        </a>
+                                        <!-- <button id="show-login2" type="button"
+                                            class="btn btn-outline-primary">Buy-Now</button>
+                                        </a> -->
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
+                                    <!-- </div> -->
                                     <!-- <label class="form-label">Amount->200</label> -->
-                                </div>
+                                <!-- </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col">
+                    <!-- <div class="col">
                         <div class="card shadow-sm">
                             {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
@@ -187,16 +221,20 @@
                             <img src="static/devops.png" class="mt-2" alt="" />
                             <div class="card-body">
                                 <p class="card-text">
-                                <u><h4>DevOps</h4></u>DevOps is the tools designed to increase an organization's ability to
-                                deliver applications and services faster than traditional software development
-                                processes.</p>
+                                    <u>
+                                        <h4>DevOps</h4>
+                                    </u>DevOps is the tools designed to increase an organization's ability to
+                                    deliver applications and services faster than traditional software development
+                                    processes.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <!-- <a href="{% url 'login' %}"> -->
-                                        <button id="show-login3" type="button" class="btn btn-outline-primary">Buy-Now</button>
-                                        </a>
+                                        <a href="{% url 'login' %}"> -->
+                                        <!-- <button id="show-login3" type="button"
+                                            class="btn btn-outline-primary">Buy-Now</button>
+                                        </a> -->
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
+                                    <!-- </div>
                                 </div>
                             </div>
                         </div>
@@ -213,22 +251,27 @@
                             <img src="static/linux.jpg" class="mt-2" width="100%" height="142 alt="" />
                             <div class=" card-body">
                             <p class="card-text">
-                            <u><h4 class="mt-5">Linux Administration</h4></u>Linux administration covers backups, file
-                            restores, new system builds, hardware maintenance, automation, application installation and
-                            much more.</p>
+                                <u>
+                                    <h4 class="mt-5">Linux Administration</h4>
+                                </u>Linux administration covers backups, file
+                                restores, new system builds, hardware maintenance, automation, application installation
+                                and
+                                much more.
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
+                                <div class="btn-group"> -->
                                     <!-- <a href="{% url 'login' %}"> -->
-                                    <button id="show-login4" type="button" class="btn btn-outline-primary">Buy-Now</button>
-                                </a>
+                                    <!-- <button id="show-login4" type="button"
+                                        class="btn btn-outline-primary">Buy-Now</button>
+                                    </a> -->
                                     <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                </div>
+                                <!-- </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="col"> -->
-                <div class="card shadow-sm">
+                <!-- <div class="card shadow-sm">
                     {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -239,17 +282,20 @@
                     <img src="static/MicrosoftAzure.jpg" class="mt-2" width="100%" height="190" alt="" />
                     <div class="card-body">
                         <p class="card-text">
-                       <u> <h4>Azure Administration</h4> </u>An Azure Administrator is responsible for implementing, monitoring
-                        and maintaining Microsoft Azure solutions, and other services too.</p>
+                            <u>
+                                <h4>Azure Administration</h4>
+                            </u>An Azure Administrator is responsible for implementing, monitoring
+                            and maintaining Microsoft Azure solutions, and other services too.
+                        </p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                            <div class="btn-group"> -->
                                 <!-- <a href="{% url 'login' %}"> -->
-                                <button id="show-login5"  type="button" class="btn btn-outline-primary">Buy-Now</button>
-                                </a>
+                                <!-- <button id="show-login5" type="button" class="btn btn-outline-primary">Buy-Now</button>
+                                </a> -->
                                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                            </div>
-                        </div>
-                    </div>
+                            <!-- </div>
+                        </div> 
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -289,7 +335,8 @@
             <div class="a">
                 <a href="https://newwayprofessionals.in/"><img src="static/earth.png" width="30" alt="">
                 </a>
-                <a href="https://www.linkedin.com/in/new-way-professionals-851088212/"><img src="static/linked.png" width="85" alt="">
+                <a href="https://www.linkedin.com/in/new-way-professionals-851088212/"><img src="static/linked.png"
+                        width="85" alt="">
                 </a>
             </div>
             <div class="w3l-copy text-center">
@@ -298,7 +345,7 @@
             </div>
             <p>Copyright © 2021 Newwayprofessionals
             </p>
- 
+
 
         </div>
     </footer>
@@ -316,39 +363,39 @@
         crossorigin="anonymous"></script>
 
 
-        <!-- popup login form -->
-        <form action="">
+    <!-- popup login form -->
+    <!-- <form action="">
           <div class="popup">
             <div class="close-btn">&times;</div>
             <div class="form">
-              <h2>Course Content</h2>
-              <!-- <div class="mb-3">
+              <h2>Course Content</h2> -->
+    <!-- <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" placeholder="Enter email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
-                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div> -->
-              <!-- <div class="mb-3">
+    <!-- <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" placeholder="Enter password" class="form-control" id="exampleInputPassword1">
               </div> -->
-              <!-- <div class="form-element">
+    <!-- <div class="form-element">
                 <input type="checkbox" id="remember-me">
                 <label for="remember-me">Remember me</label>
               </div> -->
-               <!-- <div class="form-element">
+    <!-- <div class="form-element">
                  <button>Log-in</button>
                </div> -->
-               <!-- <div class="form-element">
+    <!-- <div class="form-element">
                  Don't have account?<a href="/signup">Signup</a>
                </div> -->
-            </div>
+    <!-- </div>
           </div>
-        </form>
-        
+        </form> -->
 
 
-          <!-- .show-login -->
-          <script>
+
+    <!-- .show-login -->
+    <!-- <script>
 
         document.querySelector("#show-login").addEventListener("click",function(){
             document.querySelector(".popup").classList.add("active");
@@ -358,8 +405,8 @@
           document.querySelector(".popup .close-btn").addEventListener("click",function(){
             document.querySelector(".popup").classList.remove("active")
           });
-          </script>
-          
+          </script> -->
+
     <!-- <script>
      
 
@@ -403,7 +450,7 @@
         document.querySelector(".popup").classList.remove("active")
       });
     </script> -->
-      
+
 
 </body>
 

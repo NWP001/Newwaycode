@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate
 # Create your views here.
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'index1.html')
 
 def login(request):
     if request.method =='POST':
