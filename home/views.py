@@ -5,13 +5,19 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def index(request):
-    if request.method =="POST":
-        return render(request,'buynow.html')
-
     return render(request,'index1.html')
+
+@csrf_exempt
+def success(request):
+    if request.method=="POST":
+        a=request.POST
+        print(a)
+
+    return render(request,"buynow.html")
 
 def login(request):
     if request.method =='POST':
