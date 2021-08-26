@@ -16,6 +16,7 @@ def success(request):
     if request.method=="POST":
         a=request.POST
         print(a)
+        return render(request,"buynow.html")
 
     return render(request,"buynow.html")
 
